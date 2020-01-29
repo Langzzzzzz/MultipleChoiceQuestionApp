@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">MultipleChoiceQuestionApp</string>
+    <string name="a_button_label">A</string>
+    <string name="b_button_label">B</string>
+    <string name="c_button_label">C</string>
+    <string name="d_button_label">D</string>
+    <string name="e_button_label">E</string>
+    <string name="prev_button_label">Prev</string>
+    <string name="submit_button_label">Submit</string>
+    <string name="next_button_label">Next</string>
+
+    <string name="question1">Which of the following has a method names flush( )?\n
+    (a) Input stream\n
+    (b) Output Stream\n
+    (c)Reader stream\n
+    (d) Input reader stream\n
+    (e) Input output stream[b]</string>
+
+    <string name="question2">Which statement is true regarding an object?\n
+    (a)An object is what classes instantiated are from\n
+    (b)An object is an instance of a class\n
+    (c) An object is a variable\n
+    (d) An object is a reference to an attribute\n
+    (e) An object is not an instance of a class[b]</string>
+
+    <string name="question3">Which of the following does not belong: If a class inherits from some other class, it should\n
+    (a) Make use of the parent class’s capabilities\n
+    (b) Over-ride or add the minimum to accomplish the derived class’ purpose\n
+    (c) Over-ride all the methods of its parent class\n
+    (d) Make sure the result “IS-A-KIND-OF” its base class\n
+    (e) Make sure the result “contains” its base class[c]</string>
+
+    <string name="question4">Object-oriented inheritance models the\n
+    (a) “is a kind of” relationship\n
+    (b) “has a” relationship\n
+    (c) “want to be” relationship\n
+    (d) inheritance does not describe any kind of relationship between classes\n
+    (e) “contains” of relationship[a]</string>
+
+    <string name="question5">In object-oriented programming, new classes can be defined by extending existing classes. This is an example of:\n
+    (a) Encapsulation\n
+    (b) Interface\n
+    (c) Composition\n
+    (d) Inheritance\n
+    (e) Aggregation[d]</string>
+
+    <string name="question6">Given a class named student, which of the following is a valid constructor declaration for the class?\n
+    (a) Student (student s) { } \n
+    (b) Student student ( ) { }\n
+    (c) Private final student ( ) { } \n
+    (d) Void student ( ) { }\n
+    (e) Static void student(){ }[a]</string>
+
+    <string name="question7"> The concept of multiple inheritances is implemented in Java by\n
+    I. Extending two or more classes.\n
+    II. Extending one class and implementing one or more interfaces.\n
+    III. Implementing two or more interfaces.\n
+    (a) Only (II)\n
+    (b) (I) and (II)\n
+    (c) (II) and (III)\n
+    (d) Only (I)\n
+    (e) Only (III)[c]</string>
+
+    <string name="question8">In Java, declaring a class abstract is useful\n
+    (a) To prevent developers from further extending the class\n
+    (b) When it doesn’t make sense to have objects of that class\n
+    (c) When default implementations of some methods are not desirable\n
+    (d) To force developers to extend the class not to use its capabilities\n
+    (e) When it makes sense to have objects of that class[b]</string>
+
+    <string name="question9">A package is a collection of\n
+    (a) Classes\n
+    (b) Interfaces\n
+    (c) Editing tools\n
+    (d) Classes and interfaces\n
+    (e) Editing tools and interfaces[d]</string>
+
+    <string name="question10">Basic Java language functions are stored in which of the following java package?\n
+    (a) java.lang\n
+    (b) java.io\n
+    (c) java.net\n
+    (d) java.util\n
+    (e) java.awt[a]</string>
+
+
+
+</resources>

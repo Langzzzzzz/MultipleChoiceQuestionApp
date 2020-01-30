@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView mQuestionTextView;
     private int mCurrentQuestionIndex = 0;
 
-    ArrayList<Question> mQuestions = new ArrayList<Question>();
-    ArrayList<String> correctAnswer = new ArrayList<String>();
-    ArrayList<String> userAnswer = new ArrayList<String>(Collections.nCopies(10, "f"));
-    ArrayList<Button> AnswerbuttonList = new ArrayList<Button>();
-    ArrayList<Button> ControlbuttonList = new ArrayList<Button>();
+    ArrayList<Question> mQuestions = new ArrayList<>();
+    ArrayList<String> correctAnswer = new ArrayList<>();
+    ArrayList<String> userAnswer = new ArrayList<>(Collections.nCopies(10, "f"));
+    ArrayList<Button> AnswerbuttonList = new ArrayList<>();
+    ArrayList<Button> ControlbuttonList = new ArrayList<>();
 
 
     @Override
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ControlbuttonList.add(mSubmitButton);
         ControlbuttonList.add(mNextButton);
 
-        mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
+        mQuestionTextView = findViewById(R.id.question_text_view);
         mQuestionTextView.setText(mQuestions.get(mCurrentQuestionIndex).getQuestion());
 
         /*
@@ -154,13 +154,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // do something for button submit click
                 for (Button y: AnswerbuttonList) y.setEnabled(true);
                 for (Button x: ControlbuttonList) x.setEnabled(true);
+                mCurrentQuestionIndex=0;
+                mQuestionTextView.setText(mQuestions.get(mCurrentQuestionIndex).getQuestion());
+                if(mCurrentQuestionIndex == 0) mPrevButton.setEnabled(false);
                 int mark = getMark(correctAnswer,userAnswer);
                 String markAsString = Integer.toString(mark);
-
                 String result = markAsString+"/10";
                 Toast.makeText(MainActivity.this,
                         result,
                         Toast.LENGTH_SHORT).show();
+                userAnswer = new ArrayList<>(Collections.nCopies(10, "f"));
                 break;
             }
 

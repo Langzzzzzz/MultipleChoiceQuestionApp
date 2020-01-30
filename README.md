@@ -2,7 +2,7 @@
 First android app to practice LinearLayout, Button click event and Toast event.
 
 ## HOW THE APP LOOKS LIKE????
- Here is the icon:
+ Here is the icon: <br/> 
  ![alt text](icon.png)
 
  Here is the Main Interface:

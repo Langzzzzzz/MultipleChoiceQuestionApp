@@ -146,6 +146,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // do something for button prev click
                 for (Button x: AnswerbuttonList) x.setTextColor(Color.parseColor("#C6AB39"));
                 for (Button x: ControlbuttonList) x.setTextColor(Color.parseColor("#C6AB39"));
+                mNextButton.setEnabled(true);
                 if(mCurrentQuestionIndex == 0) {
                     mPrevButton.setEnabled(false);
                     mPrevButton.setTextColor(Color.parseColor("#5C5B5B"));

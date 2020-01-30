@@ -1,6 +1,9 @@
 # MultipleChoiceQuestionApp
 First android app to practice LinearLayout, Button click event and Toast event.
 
+## HOW THE APP LOOKS LIKE????
+ Here is the icon:
+ 
 ### TODO.....
   Loading interface....
   user log in....

@@ -100,6 +100,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return result;
     }
 
+    public void checkButton(String target){
+        switch (target.toUpperCase()){
+            case "A":
+                mAButton.setTextColor(Color.parseColor("#350E5F"));
+                break;
+            case "B":
+                mBButton.setTextColor(Color.parseColor("#350E5F"));
+                break;
+            case "C":
+                mCButton.setTextColor(Color.parseColor("#350E5F"));
+                break;
+            case "D":
+                mDButton.setTextColor(Color.parseColor("#350E5F"));
+                break;
+            case "E":
+                mEButton.setTextColor(Color.parseColor("#350E5F"));
+                break;
+            default:
+                break;
+        }
+
+
+    }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -155,7 +179,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.LENGTH_SHORT).show();
                 }else{
                     mCurrentQuestionIndex--;
-                    mQuestionTextView.setText(mQuestions.get(mCurrentQuestionIndex).getQuestion());}
+                    mQuestionTextView.setText(mQuestions.get(mCurrentQuestionIndex).getQuestion());
+                    checkButton(userAnswer.get(mCurrentQuestionIndex));}
+
                 break;
             }
 
@@ -189,12 +215,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(MainActivity.this,
                             "~~~This is the last question,\n Can't go next~~~",
                             Toast.LENGTH_SHORT).show();
+                }else{
+                    mPrevButton.setEnabled(true);
+                    mQuestionTextView.setText(mQuestions.get(mCurrentQuestionIndex).getQuestion());
+                    checkButton(userAnswer.get(mCurrentQuestionIndex));
                 }
-                mPrevButton.setEnabled(true);
-                mQuestionTextView.setText(mQuestions.get(mCurrentQuestionIndex).getQuestion());
                 break;
             }
             //.... etc
+            default:
+                throw new IllegalStateException("Unexpected value: " + v.getId());
         }
     }
 }

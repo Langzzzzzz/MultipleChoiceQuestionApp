@@ -1,5 +1,14 @@
 # MultipleChoiceQuestionApp
+
+Student Name: Zhenqing Lang
+Student Number: 1010827276
+
 First android app to practice LinearLayout, Button click event and Toast event.
+
+## Platform Tested
+    Tested on AVD
+        - Nexus 5X API 29
+        - Google Pixel 3a API 29
 
 ## HOW THE APP LOOKS LIKE????
  Here is the icon: <br/> 
@@ -7,7 +16,4 @@ First android app to practice LinearLayout, Button click event and Toast event.
 
  Here is the Main Interface:
  ![alt text](mainInterface.png)
- 
-### TODO.....
-  1. Loading interface....
-  2. user log in....
+

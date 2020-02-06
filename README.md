@@ -1,7 +1,7 @@
 # MultipleChoiceQuestionApp
 
-Student Name: Zhenqing Lang
-Student Number: 1010827276
+> Student Name: Zhenqing Lang<br>
+> Student Number: 1010*****
 
 First android app to practice LinearLayout, Button click event and Toast event.
 

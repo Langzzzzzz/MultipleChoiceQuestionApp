@@ -16,4 +16,9 @@ First android app to practice LinearLayout, Button click event and Toast event.
 
  Here is the Main Interface:
  ![alt text](mainInterface.png)
+ 
+ ## TODO....
+  * loading interface
+  * background beautify
+  * .....
 
